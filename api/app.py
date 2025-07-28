@@ -20,4 +20,3 @@ def ask():
         return jsonify({"answer": answer})
     except Exception as e:
         return jsonify({"error": str(e)}), 500
-        Add error logging for OpenAI call
