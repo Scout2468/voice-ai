@@ -15,3 +15,4 @@ def ask():
         messages=[{"role": "user", "content": q}]
     )
     return jsonify({"answer": resp.choices[0].message.content.strip()})
+# Triggering first deploy to Vercel
